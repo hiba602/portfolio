@@ -1,0 +1,443 @@
+* {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/*header */
+#header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgb(69, 67, 75);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li,
+#navbar a {
+  list-style: none;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+
+#navbar li:hover,
+#navbar a:hover {
+  color: #3b2214;
+  font-family: "Pirata One", system-ui;
+}
+
+.logo {
+  font-family: "Festive", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.logo-container {
+  font-family: "Festive", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  color: black;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*media query*/
+#mobile {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+/*hero*/
+
+.cars,
+.coffee,
+.time,
+.music {
+  background-image: url("images/car\ 2.jpg");
+  height: 100vh;
+  max-width: 96%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 25px auto;
+  border-radius: 70px;
+}
+
+.coffee {
+  background-image: url(images/coffee\ 2.jpg);
+}
+
+.time {
+  background-image: url(images/time.jpg);
+}
+
+.music {
+  background-image: url(images/music\ 1.jpg);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #863404;
+}
+
+.hero-link {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.hero-text {
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  font-family: "Festive", cursive;
+  padding: 20px 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+.hero-link:hover .hero-text {
+  opacity: 1;
+}
+
+/*footer*/
+
+#footer #box-footer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 240px;
+}
+
+#footer #box-footer .box ul li {
+  padding: 10px 0;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#footer #box-footer .box ul li a:hover,
+#footer #box-footer .box ul li a i:hover {
+  color: #3b2214;
+  font-family: "Pirata One", system-ui;
+}
+
+#footer #box-footer .box h3 {
+  color: #813607;
+}
+
+.credit {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* details */
+#details .box-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+#details .box-details img {
+  width: 40rem;
+  height: 20rem;
+  border-radius: 20px;
+}
+
+#details .box-details .text-content {
+  max-width: 600px;
+}
+
+#details .box-details .text-content h2 {
+  color: #813607;
+}
+
+#details .box-details .text-content h3 {
+  color: rgb(94, 90, 90);
+}
+
+#details .box-details video {
+  width: 40rem;
+  height: 35rem;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* passion */
+#passion {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f6f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#passion h2 {
+  text-align: center;
+  color: #6b4c3b;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+#passion p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+/* quotes */
+#quotes {
+  background-color: #f9f6f1dc;
+  padding: 50px 20px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.quotes-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#quotes h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #813607;
+  font-family: "Georgia", serif;
+}
+
+#quotes blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #5a4a3b;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid #d2b48c;
+  background-color: #fffaf5;
+  border-radius: 8px;
+}
+
+/*media query*/
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 60px;
+    right: -600px;
+    width: 200px;
+    padding: 40px 0;
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 40px 60px rgb(0, 0, 0 /10%);
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #mobile i {
+    color: rgb(15, 15, 15);
+    font-size: 24px;
+    padding-left: 20px;
+    padding: 10px 10px;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+    display: inline;
+  }
+}
+
+/* Media Query for tablets and small screens */
+@media (max-width: 768px) {
+
+  /* تعديل تباعد قائمة التنقل */
+  #navbar li,
+  #navbar a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* تصغير حجم الشعار */
+  .logo {
+    font-size: 36px;
+    padding: 0 40px;
+  }
+
+  /* تعديل ارتفاع وحجم خلفيات الصور */
+  .cars,
+  .coffee,
+  .time,
+  .music {
+    height: 60vh;
+    max-width: 90%;
+    border-radius: 40px;
+    margin: 20px auto;
+  }
+
+  /* تصغير حجم النص داخل hero-text */
+  .hero-text {
+    font-size: 32px;
+    padding: 15px 20px;
+  }
+
+  /* تعديل في قسم التفاصيل */
+  #details .box-details {
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #details .box-details img,
+  #details .box-details video {
+    width: 100%;
+    height: 40vh;
+    border-radius: 15px;
+  }
+
+  #details .box-details .text-content {
+    max-width: 100%;
+  }
+
+  /* تصغير قسم passion */
+  #passion {
+    max-width: 90%;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  #passion h2 {
+    font-size: 2rem;
+  }
+
+  #passion p {
+    font-size: 1rem;
+  }
+
+  /* تعديل قسم quotes */
+  #quotes {
+    margin: 30px;
+    padding: 30px 15px;
+  }
+
+  #quotes h2 {
+    font-size: 1.8rem;
+  }
+
+  #quotes blockquote {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+
+  /* Footer adjustments */
+  #footer #box-footer {
+    flex-direction: row;
+  }
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+
+  #navbar li,
+  #navbar a {
+    padding: 8px 0;
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    padding: 10px 15px;
+  }
+
+  .cars,
+  .coffee,
+  .time,
+  .music {
+    height: 50vh;
+    max-width: 95%;
+    border-radius: 30px;
+    margin: 15px auto;
+  }
+
+  #passion {
+    padding: 10px;
+  }
+
+  #passion h2 {
+    font-size: 1.3rem;
+  }
+
+  #passion p {
+    font-size: 0.9rem;
+  }
+
+  #quotes h2 {
+    font-size: 1.5rem;
+  }
+
+  #quotes blockquote {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  #footer #box-footer {
+    margin: 0 10px;
+  }
+}
